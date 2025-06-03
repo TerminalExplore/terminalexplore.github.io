@@ -1,39 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8"/>
     <meta
       name="description"
-      content="Welcome to my website. Here you will find brief information about me"
-    />
-    <meta property="og:image" content="images/OEh1e7t.gif" />
+      content="Welcome to TerminalExplore's personal site — discover my programming projects, explore my journey as a cybersecurity engineering student, and find links to my DevOps experiments, social platforms, and contact info."/>
     <meta name="theme-color" content="#2c94a4" />
-    <meta name="keywords" content="Artemk1z" />
-    <meta
-      name="viewport"
-      content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <meta name="keywords" content="TerminalExplore, GitHub Pages, software developer, cybersecurity student, DevOps enthusiast, programming portfolio, personal website, open source projects, code, Linux, CI/CD, automation, infrastructure as code, cyber engineering, GitHub, contact, tech blog, terminal, coding projects"/>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.user-scalable=no"/>
     <title>TerminalExplore</title>
-    <link rel="icon" href="images/favicon.ico" />
-    <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/styles.min.css"/>
     <script src="js/scripts.min.js" async=""></script>
     <script>
       function updateTimeAndDate() {
           const now = new Date();
 
-          // GMT+2
           const offset = 2 * 60 * 60 * 1000;
           const gmt2 = new Date(now.getTime() + offset);
 
-          // Time
           const hours = gmt2.getUTCHours().toString().padStart(2, '0');
           const minutes = gmt2.getUTCMinutes().toString().padStart(2, '0');
           const timeString = `${hours}:${minutes}`;
 
-          // Date
           const day = gmt2.getUTCDate().toString().padStart(2, '0');
-          const month = (gmt2.getUTCMonth() + 1).toString().padStart(2, '0'); // Месяцы идут с 0, поэтому добавляем 1
+          const month = (gmt2.getUTCMonth() + 1).toString().padStart(2, '0');
           const year = gmt2.getUTCFullYear();
           const dateString = `${day}/${month}/${year}`;
 
@@ -41,16 +33,16 @@
           document.querySelector('.date').textContent = dateString;
       }
 
-      // Update time every 1 min
       setInterval(updateTimeAndDate, 60000);
-      // Update after reloading page
+
       document.addEventListener('DOMContentLoaded', updateTimeAndDate);
     </script>
   </head>
   <body>
     <main>
       <div class="room">
-        <img class="room-gif" src="images/room.gif" alt="Room" /><svg
+        <img class="room-gif" src="images/room.gif" alt="Room"/>
+        <svg
           class="monitor-svg"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -131,12 +123,10 @@
           </div>
           <div class="window-body about-body">
             <div class="clearfix"></div>
-            <p>Hey, it's me, <a target="_blank" rel="noopener">Artem</a>👋🏼</p>
+            <p>Hey, it's me, <a target="_blank" rel="noopener">Artem</a>🙋‍♂️</p>
             <p>
               I am an aspiring DevSecOps specialist. My journey into programming began back in high school, when we were learning to create small scripts in Pascal during computer science lessons. Since then, I’ve explored various interesting areas — from game development with Unity and C# to both Frontend and Backend development. However, I found myself most drawn to Information Security and DevOps.
             </p>
-            <p></p>
-            <p></p>
           </div>
         </div>
         <div class="explorer-window work-explorer" tabindex="0">
@@ -150,7 +140,7 @@
             <div class="work-item">
               <a class="work-link-1" target="_blank">
                 <img src="images/1.png" /><span class="name">TECNO MEGABOOK K16S — RYZEN 7 5800</span
-                ><span class="language one no-left-margin">Notebook</span></a
+                ><span class="language one no-left-margin">Laptop</span></a
               >
             </div>
             <div class="work-item">

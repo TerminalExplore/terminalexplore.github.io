@@ -13,30 +13,6 @@
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/styles.min.css"/>
     <script src="js/scripts.min.js" async=""></script>
-    <script>
-      function updateTimeAndDate() {
-          const now = new Date();
-
-          const offset = 2 * 60 * 60 * 1000;
-          const gmt2 = new Date(now.getTime() + offset);
-
-          const hours = gmt2.getUTCHours().toString().padStart(2, '0');
-          const minutes = gmt2.getUTCMinutes().toString().padStart(2, '0');
-          const timeString = `${hours}:${minutes}`;
-
-          const day = gmt2.getUTCDate().toString().padStart(2, '0');
-          const month = (gmt2.getUTCMonth() + 1).toString().padStart(2, '0');
-          const year = gmt2.getUTCFullYear();
-          const dateString = `${day}/${month}/${year}`;
-
-          document.querySelector('.time').textContent = timeString;
-          document.querySelector('.date').textContent = dateString;
-      }
-
-      setInterval(updateTimeAndDate, 60000);
-
-      document.addEventListener('DOMContentLoaded', updateTimeAndDate);
-    </script>
 </head>
   <body>
     <main>

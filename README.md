@@ -31,6 +31,17 @@ Manual override:
 - Force lite mode: `?lite=1`
 - Force full mode: `?lite=0`
 
+## Spotify widget
+
+Spotify player is shown in the bottom-left corner when the desktop UI opens.
+It loads lazily on first click of the `Playlist` button.
+
+Set your playlist URL in `index.html` (`iframe` attribute `data-src`):
+
+```html
+data-src="https://open.spotify.com/embed/playlist/YOUR_PLAYLIST_ID?utm_source=generator&theme=0"
+```
+
 ## Run with Docker Compose
 
 ```bash

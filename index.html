@@ -254,6 +254,28 @@
           </div>
         </div>
 
+        <div class="music-widget">
+          <button
+            class="music-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="spotify-widget-player"
+          >
+            <i class="fa fa-spotify"></i>
+            <span>Playlist</span>
+          </button>
+          <div class="music-panel" id="spotify-widget-player" hidden>
+            <iframe
+              class="spotify-embed"
+              title="Spotify playlist"
+              data-src="https://open.spotify.com/embed/playlist/1xEnZQIvF9npCebte50hpY?utm_source=generator&theme=0"
+              loading="lazy"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+        </div>
+
         <div class="info">
           <div>
             <p class="time">timeString</p>

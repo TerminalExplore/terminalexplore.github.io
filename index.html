@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Welcome to TerminalExplore's personal site — discover my programming projects, explore my journey as a cybersecurity engineering student, and find links to my DevOps experiments, social platforms, and contact info."/>
+      content="Welcome to TerminalExplore's personal site - discover my projects, DevOps experiments, and contact links."
+    />
+    <meta
+      name="keywords"
+      content="TerminalExplore, personal website, software developer, cybersecurity student, DevOps, portfolio, open source, Linux, CI/CD, automation"
+    />
     <meta name="theme-color" content="#2c94a4" />
-    <meta name="keywords" content="TerminalExplore, GitHub Pages, software developer, cybersecurity student, DevOps enthusiast, programming portfolio, personal website, open source projects, code, Linux, CI/CD, automation, infrastructure as code, cyber engineering, GitHub, contact, tech blog, terminal, coding projects"/>
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.user-scalable=no"/>
     <title>TerminalExplore</title>
-    <link rel="icon" href="images/favicon.ico"/>
-    <link rel="stylesheet" href="css/styles.min.css"/>
-    <script src="js/scripts.min.js" async=""></script>
-</head>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <script src="js/vendor.min.js" defer></script>
+    <script src="js/app.min.js" defer></script>
+  </head>
   <body>
     <main>
       <div class="room">
-        <img class="room-gif" src="images/room.gif" alt="Room"/>
+        <img
+          class="room-gif"
+          src="images/room.gif"
+          alt="Pixel-art workspace"
+          fetchpriority="high"
+          decoding="async"
+        />
         <svg
           class="monitor-svg"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          xlink="http://www.w3.org/1999/xlink"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px"
           y="0px"
           viewBox="0 0 600 400"
           style="enable-background:new 0 0 600 400;"
-          space="preserve">
+          xml:space="preserve"
+        >
           <g class="monitor">
             <rect class="st1" x="79.5" y="157.5" width="81" height="49"></rect>
           </g>
@@ -36,12 +47,13 @@
           <div class="monitor"></div>
         </div>
       </div>
+
       <div class="screenGrid"></div>
-      <div class="screenGrid"></div>
-      <div class="screenGrid"></div>
+
       <div class="screen desktop">
         <div class="noise"></div>
         <div class="monitor-edges"></div>
+
         <div class="apps">
           <div class="app-container">
             <div class="app-icon work">
@@ -51,27 +63,49 @@
               <i class="fa fa-folder fa-2x"></i><span>Works</span>
             </div>
           </div>
+
           <div class="clearfix"></div>
+
           <div class="app-icon about">
             <i class="fa fa-user-circle fa-2x"></i><span>About me</span>
           </div>
+
           <div class="clearfix"></div>
+
+          <div class="app-icon contact">
+            <i class="fa fa-paper-plane fa-2x"></i><span>Send mail</span>
+          </div>
+
+          <div class="clearfix"></div>
+
           <div class="app-icon sitev2">
             <a
               href="https://t.me/TerminalExplore"
               target="_blank"
-              rel="noopener">
-              <i class="fa fa-envelope fa-2x"></i><span>Contact me</span></a>
+              rel="noopener noreferrer"
+              aria-label="Telegram"
+            >
+              <i class="fa fa-envelope fa-2x"></i><span>Telegram</span>
+            </a>
           </div>
+
           <div class="clearfix"><span></span></div>
         </div>
+
         <div class="apps social">
           <div class="app-icon social">
-            <a href="https://github.com/TerminalExplore" target="_blank" rel="noopener"
-              ><i class="fa fa-github fa-2x"></i><span>Github</span></a>
+            <a
+              href="https://github.com/TerminalExplore"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="fa fa-github fa-2x"></i><span>GitHub</span>
+            </a>
           </div>
           <div class="clearfix"></div>
         </div>
+
         <div class="explorer-window trash-explorer" tabindex="0">
           <div class="window-header">
             <p class="window-title">Recycle</p>
@@ -86,6 +120,7 @@
             </div>
           </div>
         </div>
+
         <div class="explorer-window about-explorer" tabindex="0">
           <div class="window-header">
             <p class="window-title">About me</p>
@@ -95,14 +130,16 @@
           </div>
           <div class="window-body about-body">
             <div class="clearfix"></div>
-            <p>Hello, my name's <a target="_blank" rel="noopener">Artem</a>🙋‍♂️</p>
+            <p>Hello, my name is Artem.</p>
             <p>
-              As a novice DevOps engineer, my journey into the world of programming and information technology began in my high school years, when I first encountered the basics of Pascal programming during computer science classes. This sparked my interest, and I have since delved deeper into the field, exploring various aspects such as game development, frontend, backend, and more.
-
-              However, after starting my career as a system administrator, I mainly focused on working with servers and network equipment. I am currently studying at the Computer Technology Department in college, deepening my knowledge in the field of programming, with a particular focus on DevOps methodologies.
+              My journey into technology started in high school with Pascal and
+              grew into work with backend, frontend, infrastructure, and
+              automation. Today I focus on system administration and DevOps
+              practices while continuing my studies in computer technology.
             </p>
           </div>
         </div>
+
         <div class="explorer-window work-explorer" tabindex="0">
           <div class="window-header">
             <p class="window-title">My setup</p>
@@ -112,22 +149,84 @@
           </div>
           <div class="window-body work-body">
             <div class="work-item">
-              <a class="work-link-1" target="_blank">
-                <img src="images/Devices/1.png" /><span class="name">TECNO MEGABOOK K16S — RYZEN 7 5800</span>
-                <span class="language one no-left-margin">Laptop</span></a>
+              <img
+                src="images/Devices/1.png"
+                alt="TECNO MEGABOOK K16S laptop"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="name">TECNO MEGABOOK K16S - RYZEN 7 5800</span>
+              <span class="language one no-left-margin">Laptop</span>
             </div>
+
             <div class="work-item">
-              <a target="_blank"></a>
-                <img src="images/Devices/2.png" /><span class="name">Panteon M2 BW</span>
-                <span class="language one no-left-margin">Keyboard</span></a>
+              <img
+                src="images/Devices/2.png"
+                alt="Panteon M2 BW keyboard"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="name">Panteon M2 BW</span>
+              <span class="language one no-left-margin">Keyboard</span>
             </div>
+
             <div class="work-item">
-              <a target="_blank"></a>
-                <img src="images/Devices/3.png" /><span class="name">Logitech Signature M650 L</span>
-                <span class="language one no-left-margin">Mouse</span></a>
+              <img
+                src="images/Devices/3.png"
+                alt="Logitech Signature M650 L mouse"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="name">Logitech Signature M650 L</span>
+              <span class="language one no-left-margin">Mouse</span>
             </div>
           </div>
         </div>
+
+        <div class="explorer-window contact-explorer" tabindex="0">
+          <div class="window-header">
+            <p class="window-title">Contact</p>
+            <div class="button-wrap close-explorer">
+              <i class="fa fa-times"></i>
+            </div>
+          </div>
+          <div class="window-body contact-body">
+            <form novalidate data-provider="formsubmit" data-endpoint="" data-access-key="">
+              <div class="to-from-field">
+                <span>To</span>
+                <input class="contact-to" type="text" value="contact@4ng3l.dev" readonly />
+              </div>
+              <div class="to-from-field">
+                <span>From</span>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  placeholder="Enter your email here"
+                  required
+                />
+              </div>
+              <textarea
+                rows="5"
+                id="message"
+                name="message"
+                placeholder="Enter your message here"
+                required
+              ></textarea>
+              <input class="honeypot" name="firstname" type="text" id="firstname" tabindex="-1" autocomplete="off" />
+              <button type="submit" class="contact-submit">
+                Send <i class="fa fa-send"></i>
+              </button>
+              <p class="contact-status" aria-live="polite"></p>
+            </form>
+            <div class="thanks">
+              <h1>Done</h1>
+              <p>Your message has been sent successfully.</p>
+            </div>
+          </div>
+        </div>
+
         <div class="explorer-window awards-explorer" tabindex="0">
           <div class="window-header">
             <p class="window-title">Works</p>
@@ -139,13 +238,21 @@
             <div class="award-item">
               <a
                 href="https://discord.gg/HvpWN52pKC"
-                target="_blank">
-                <img src="images/WorkImages/SEVENBFIVE/SBF-Discord-bot-avatar.png" alt="GameLogo" />
-                <span class="name">SEVEN B FIVE — Discord.Py Bots</span>
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/WorkImages/SEVENBFIVE/SBF-Discord-bot-avatar.png"
+                  alt="SEVEN B FIVE Discord bot avatar"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="name">SEVEN B FIVE - Discord.py bots</span>
               </a>
             </div>
           </div>
         </div>
+
         <div class="info">
           <div>
             <p class="time">timeString</p>

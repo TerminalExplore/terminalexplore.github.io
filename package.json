@@ -1,0 +1,10 @@
+{
+  "name": "terminalexplore-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TerminalExplore personal site",
+  "scripts": {
+    "dev": "node server.js --dev",
+    "start": "node server.js"
+  }
+}

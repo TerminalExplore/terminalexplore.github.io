@@ -5027,10 +5027,6 @@ body .ui-tooltip {
 	font-weight: 700;
 }
 
-@font-face {
-	font-family:'Open Sans';src:url(../fonts/webfont.eot);src:url(../fonts/webfont.eot#iefix) format("embedded-opentype"),url(../fonts/webfont.woff2) format("woff2"),url(../fonts/webfont.woff) format("woff"),url(../fonts/webfont.ttf) format("truetype"),url(../fonts/webfont.svg#svgFontName) format("svg");
-}
-
 html {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -5571,6 +5567,28 @@ body,html {
 	cursor: pointer;
 }
 
+.desktop .explorer-window .window-body.contact-body form .contact-submit.disabled,.desktop .explorer-window .window-body.contact-body form .contact-submit:disabled {
+	opacity: .6;
+	cursor: wait;
+}
+
+.desktop .explorer-window .window-body.contact-body form .contact-status {
+	width: 100%;
+	font-size: .85rem;
+	margin-top: 10px;
+	margin-bottom: 0;
+	min-height: 1.2rem;
+	color: #f1f1f1;
+}
+
+.desktop .explorer-window .window-body.contact-body form .contact-status.error {
+	color: #de5145;
+}
+
+.desktop .explorer-window .window-body.contact-body form .contact-status.success {
+	color: #1ed760;
+}
+
 .desktop .explorer-window .window-body.about-body *,.desktop .explorer-window .window-body.contact-body * {
 	text-transform: none!important;
 	font-weight: 400!important;
@@ -5720,4 +5738,36 @@ body,html {
 
 .ui-widget-header .ui-icon {
 	background-image: url(../images/ui-icons_444444_256x240.png)!important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	:after,
+	:before {
+		animation: none!important;
+		transition: none!important;
+	}
+
+	.desktop .monitor-edges,
+	.room:not(.ie) .monitor-svg,
+	.room:not(.ie) .room-gif {
+		-webkit-filter: none!important;
+		filter: none!important;
+	}
+
+	.desktop .noise,
+	.screenGrid {
+		display: none!important;
+	}
+}
+
+@media (max-width:768px) {
+	.desktop .noise {
+		display: none!important;
+	}
+
+	.desktop .monitor-edges {
+		-webkit-filter: none;
+		filter: none;
+	}
 }

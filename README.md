@@ -21,6 +21,16 @@ npm start
 
 Open: `http://localhost:8080` (or set `PORT` environment variable)
 
+## Performance mode (low-end devices)
+
+The frontend now auto-enables `lite-mode` on low-power/mobile setups and when hardware acceleration is unavailable.
+In this mode heavy effects are disabled and the animated room GIF is replaced with a static frame.
+
+Manual override:
+
+- Force lite mode: `?lite=1`
+- Force full mode: `?lite=0`
+
 ## Run with Docker Compose
 
 ```bash

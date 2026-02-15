@@ -5740,6 +5740,40 @@ body,html {
 	background-image: url(../images/ui-icons_444444_256x240.png)!important;
 }
 
+.lite-mode *,
+.lite-mode :after,
+.lite-mode :before {
+	animation: none!important;
+	transition: none!important;
+}
+
+.lite-mode .screenGrid,
+.lite-mode .desktop .noise {
+	display: none!important;
+}
+
+.lite-mode .desktop .monitor-edges {
+	-webkit-filter: none!important;
+	filter: none!important;
+	border-width: 15px;
+}
+
+.lite-mode .room:not(.ie) .monitor-svg,
+.lite-mode .room:not(.ie) .room-gif,
+.lite-mode .room:not(.ie).zoom-out .monitor-svg,
+.lite-mode .room:not(.ie).zoom-out .room-gif {
+	-webkit-filter: none!important;
+	filter: none!important;
+	-webkit-transform: none!important;
+	transform: none!important;
+}
+
+.lite-mode .desktop.zoom {
+	-moz-box-shadow: none!important;
+	-webkit-box-shadow: none!important;
+	box-shadow: none!important;
+}
+
 @media (prefers-reduced-motion: reduce) {
 	*,
 	:after,
